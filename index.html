@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <title>Beat Box</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>BEAT BOX</h1>
+        <p>LET THE PARTY BEGIN!!
+        <p>
+
+    </header>
+
+    <main>
+
+        <div id="platform" class="grid-con l-col-span-full">
+
+            <div id="drop-zone-element" class="drop-zone col-start-1 col-end-3 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4" ondrop=drop(event) ondragover="allowDrop(event)"></div>
+            <div id="drop-zone-element" class="drop-zone col-start-3 col-end-5 m-col-start-4 m-col-end-7 l-col-start-4 l-col-end-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="drop-zone-element" class="drop-zone col-start-1 col-end-3 m-col-start-7 m-col-end-10 l-col-start-7 l-col-end-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="drop-zone-element" class="drop-zone col-start-3 col-end-5 m-col-start-10 m-col-end-13 l-col-start-10 l-col-end-13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+
+        <div id="box" class="grid-con l-col-span-full">
+
+            <div id="box-1" class="instrument col-start-1 col-end-3 m-col-start-2 m-col-end-4 l-col-start-2 l-col-end-4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/saxophone.svg" id="saxophone" draggable="true" ondragstart="drag(event)"></div>
+            <div id="box-2" class="instrument col-start-3 col-end-5 m-col-start-4 m-col-end-6 l-col-start-4 l-col-end-6" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/guitar.svg" id="guitar" draggable="true" ondragstart="drag(event)"></div>
+            <div id="box-3" class="instrument col-start-1 col-end-3 m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="images/drums.svg" id="drums" draggable="true" ondragstart="drag(event)"></div>
+            <div id="box-4" class="instrument col-start-3 col-end-5 m-col-start-8 m-col-end-10 l-col-start-8 l-col-end-10" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/piano.svg" id="piano" draggable="true" ondragstart="drag(event)"></div>
+            <div id="box-5" class="instrument col-start-2 col-end-4 l-col-start-10 l-col-end-12 m-col-start-10 m-col-end-12" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/violine.svg" id="violin" draggable="true" ondragstart="drag(event)"></div>
+
+        </div>
+
+        <audio id="saxophone-audio" src="./assets/audio_saxophone.mp3"></audio>
+        <audio id="drums-audio" src="./assets/audio_drums.mp3"></audio>
+        <audio id="guitar-audio" src="./assets/audio_guitar.mp3"></audio>
+        <audio id="piano-audio" src="./assets/audio_piano.mp3"></audio>
+        <audio id="violin-audio" src="./assets/audio_violin.mp3"></audio>
+
+    </main>
+    <footer>
+        &copy;2024 Music Mixer Build. All rights reserved.
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
