@@ -1,4 +1,4 @@
-# Sojan_Shon_Music-Mixer
+# Music-Mixer
 
 ## Description
 This contains a music mixer with musical instruments including saxophone, guitar, drums, piano and violin is a versatile tool created by Shon Sojan.This provides an interface for mixing audio files, along with the ability to enhance compositions with instrumental accompaniments.
